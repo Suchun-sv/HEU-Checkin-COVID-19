@@ -37060,3 +37060,18 @@ Traceback (most recent call last):
 requests.exceptions.ConnectionError: HTTPConnectionPool(host='jkgc.hrbeu.edu.cn', port=80): Max retries exceeded with url: /infoplus/form/JSXNYQSBtest/start (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fe721cc92e0>: Failed to establish a new connection: [Errno 110] Connection timed out'))
 
 :.:.:.:.: Finally :.:.:.:.:
+============================
+[debug] Begin to login ...
+
+[error] :.:.:.:.: Except return :.:.:.:.:
+[error] Python Error: 
+ Traceback (most recent call last):
+  File "Actions/checkin.py", line 78, in <module>
+    csrfToken = csrfToken.pop().attrib["content"]
+IndexError: pop from empty list
+
+:.:.:.:.: Finally :.:.:.:.:
+[info] Notification sended at 2022-11-12 07:06:29 Saturday
+[info] Task Finished at 2022-11-12 07:06:29 Saturday
+============================
+
