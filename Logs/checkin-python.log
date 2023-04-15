@@ -44016,3 +44016,70 @@ IndexError: pop from empty list
 [info] Task Finished at 2023-04-15 07:02:36 Saturday
 ============================
 
+============================
+[debug] Begin to login ...
+
+[error] :.:.:.:.: Except return :.:.:.:.:
+[error] Python Error: 
+ Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/http/client.py", line 1348, in getresponse
+    response.begin()
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "Actions/checkin.py", line 68, in <module>
+    response302 = sesh.post(req.url, data=user_form, headers=headers, proxies=proxies)
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.16/x64/lib/python3.8/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+:.:.:.:.: Finally :.:.:.:.:
+[info] Notification sended at 2023-04-15 08:30:04 Saturday
+[info] Task Finished at 2023-04-15 08:30:04 Saturday
+============================
+
