@@ -55501,3 +55501,18 @@ requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected(
 [info] Task Finished at 2023-12-24 08:30:15 Sunday
 ============================
 
+============================
+[debug] Begin to login ...
+
+[error] :.:.:.:.: Except return :.:.:.:.:
+[error] Python Error: 
+ Traceback (most recent call last):
+  File "Actions/checkin.py", line 78, in <module>
+    csrfToken = csrfToken.pop().attrib["content"]
+IndexError: pop from empty list
+
+:.:.:.:.: Finally :.:.:.:.:
+[info] Notification sended at 2023-12-24 09:48:02 Sunday
+[info] Task Finished at 2023-12-24 09:48:02 Sunday
+============================
+
