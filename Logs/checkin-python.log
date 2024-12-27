@@ -71994,3 +71994,20 @@ KeyError: 'cookie'
 [info] Task Finished at 2024-12-27 10:09:58 Friday
 ============================
 
+============================
+[debug] Begin to login ...
+
+[error] :.:.:.:.: Except return :.:.:.:.:
+[error] Python Error: 
+ Traceback (most recent call last):
+  File "Actions/checkin.py", line 73, in <module>
+    headers['Cookie'] = jkgc_response.request.headers['Cookie']
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/structures.py", line 52, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'cookie'
+
+:.:.:.:.: Finally :.:.:.:.:
+[info] Notification sended at 2024-12-28 07:07:05 Saturday
+[info] Task Finished at 2024-12-28 07:07:05 Saturday
+============================
+
